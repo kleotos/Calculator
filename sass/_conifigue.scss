@@ -1,0 +1,28 @@
+$primary: #00AAFF;
+$secondary: #00FF6C;
+$border: #fff;
+
+
+*, ::before, *::after {
+    box-sizing: border-box;
+    font-family: Gethan Rounded, sans-serif;
+    font-weight: normal;
+}
+
+@mixin media-md {
+ @media screen and (min-width: 768px) {
+  @content;
+ }
+}
+
+@mixin media-lg {
+ @media screen and (min-width: 1024px) {
+  @content;
+ }
+}
+
+@mixin media-md {
+ @media screen and (min-width: 1600) {
+  @content;
+ }
+}
